@@ -10,9 +10,13 @@ const todos = [{
   text: 'First test todo'
 }, {
   _id: new ObjectID(),
+<<<<<<< HEAD
   text: 'Second test todo',
   completed: true,
   completedAt: 333
+=======
+  text: 'Second test todo'
+>>>>>>> ce9333bf37ad280deb352f551f6e5939a0666a9b
 }];
 
 beforeEach((done) => {
@@ -102,6 +106,7 @@ describe('GET /todos/:id', () => {
       .end(done);
   });
 });
+<<<<<<< HEAD
 
 describe('DELETE /todos/:id', () => {
   it('should remove a todo', (done) => {
@@ -181,3 +186,5 @@ describe('PATCH /todos/:id', () => {
       .end(done);
   });
 });
+=======
+>>>>>>> ce9333bf37ad280deb352f551f6e5939a0666a9b
